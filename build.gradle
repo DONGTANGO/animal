@@ -1,0 +1,12 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+alias(libs.plugins.android.application) apply false
+    alias(libs.plugins.google.gms.google.services) apply false
+    alias(libs.plugins.kotlin.android) apply false
+}
+
+
+allprojects {
+    // 저장소 설정을 하지 않습니다.
+    // 이 블록에서 저장소를 정의하면 에러가 발생합니다.
+}

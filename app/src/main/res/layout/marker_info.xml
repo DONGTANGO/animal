@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/marker_store"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text=""
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/marker_address"
+        app:layout_constraintTop_toBottomOf="@id/marker_store"
+        android:text=""/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/marker_phone"
+        app:layout_constraintTop_toBottomOf="@id/marker_address"
+        android:text=""/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/marker_rating"
+        app:layout_constraintTop_toBottomOf="@id/marker_phone"
+        android:text=""/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/marker_hours"
+        android:ellipsize="none"
+        android:singleLine="false"
+        android:scrollHorizontally="false"
+        android:breakStrategy="simple"
+        app:layout_constraintTop_toBottomOf="@id/marker_rating"
+        android:text=""/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/marker_24"
+        app:layout_constraintTop_toBottomOf="@id/marker_hours"
+        android:text=""/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
